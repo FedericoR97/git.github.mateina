@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0 ;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url("https://img.freepik.com/foto-gratis/interior-sala-grunge-3d-foco-fondo-ambiente-ahumado_1048-11333.jpg?w=740&t=st=1652804401~exp=1652805001~hmac=d5761333d764f1f226461771e5f0c305e5d9e9a145c89eee8db6e4920800fadf");
+	
+	
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat ;
+	background-size: cover;
+	color: lightgrey;
+	font-size: 15px;
+}
+.centrar {
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+
+ main header  {
+	text-align: center;
+
+}
+#fondoOscuro {
+	background-color: black;
+	height: 6vh;
+}
+.derecha {
+	text-align: right;
+	justify-content: center;
+}
+
+p  {
+	max-width: 400px;
+	height: 10%;
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+
+}
+ form {
+	text-align: left;
+	max-width: 500px;
+	height: 100%;
+}
+header ul {
+		display: flex;
+		justify-content: space-around;
+		margin: 2rem;
+
+}
+
+
+h3 {
+	display: inline;
+}
+.proDestacados {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	text-align: center;
+	text-align: center;
+	box-shadow: 5px 5px 9px 8px black;
+	justify-content: center;
+	align-items: center;
+}
+
+
+}
+.prodtitle {
+
+	margin: 50px;
+	padding: 8px;
+	text-align: center;
+	line-height: 2px;
+	border: 2px solid;
+	box-shadow: 5px 5px 9px 8px black;
+	gap: 2rem;
+
+}
+li a {
+	text-decoration: none;
+	
+	margin: 4px;
+	padding: 10px 20px;
+}
+
+.menuEnCaja{
+	
+	padding: 4px;
+	text-align: center;
+	line-height: 2px;
+	border: 2px solid;
+	box-shadow: 5px 5px 9px 8px black;
+	text-decoration-color: lightgrey;
+	background-color: darkgrey;
+  
+
+}
+h5 {
+	padding: 4px;
+	text-align: center;
+	line-height: 2px;
+	box-shadow: 5px 5px 9px 8px black;
+	text-decoration-color: black;
+	background-color: black;
+}
+.menuEnCajaProd{
+	
+	margin: 80px;
+	padding: 4px;
+	text-align: center;
+	line-height: 2px;
+	border: 2px solid;
+	box-shadow: 5px 5px 9px 8px black;
+	font-size: 1rem;
+	background-color: darkgrey;
+
+}
+
+
+.menuFlex{
+ 
+ 	display: flex;
+ 	flex-direction: row ;
+ 	flex-wrap: nowrap;
+ 	color: lightgrey;
+ 	justify-content:  space-around; 
+ 	margin: 50px;
+ 	font-size: 1rem;
+ 	padding: 1rem;
+ 	align-items: center;
+
+}
+nav {
+	padding: 2px;
+	/*background-color: #ffffff;*/
+}
+header nav {
+	background-color: ;
+}
+.menuProdinicio {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 4px;
+	border: 2px;
+	box-shadow: 5px 5px 10px 10px black;
+	background-color: darkgrey;
+}
+
+.section {
+	display: flex;
+
+}
+.sectionII{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+	justify-content: right;
+
+}
+
+.padreArt {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 50px;
+}
+
+/*Grids*/
+.gridFooter {
+	 display: grid; 
+  grid-template-columns: 1fr  1fr; 
+  grid-template-rows: 1fr  4fr; 
+  gap: 5px 5px; 
+  margin: 2rem;
+ 	grid-template-areas: "medPago subs" "listPago formNews" ;
+  justify-items: center; 
+  align-items: center; 
+}
+.medPago {
+	grid-area: medPago;
+}
+.listPago {
+	grid-area: listPago;
+}
+.subs {
+	grid-area: subs;
+}
+.formNews {
+	grid-area: formNews;
+}
+div form {
+	display: inline-block;
+	flex-direction: row-reverse;
+
+}
+
+iframe {
+	width: 100% !important;
+}
+/*responsive*/
+/*desktop*/
+@media  (max-width: 1024px){
+	.gridFooter {
+ grid-template-columns: 1fr;  
+  gap: 2rem; 
+  margin: 2rem;
+grid-template-areas: "medPago" "listPago" "subs" "formNews" ;
+}
+#fondoOscuro {
+	height: auto;
+}
+}
+
+/*tablet*/
+@media (max-width: 768px){
+
+	.section {
+	flex-direction: column;
+}
+	.derecha {
+	display: flex;
+	flex-direction: column;
+	max-width: 12rem;
+}
+	.derecha input {
+		margin: 7px;
+	}
+	header h2 {
+		margin: 2rem;
+
+	}
+	header ul {
+		margin: 2rem;
+	}
+}
+
+/*smartphone*/
+
+@media (max-width: 480px) {
+	header ul {
+		justify-content: center;
+	}
+	.prodtitle {
+
+	margin: 20px;
+
+}
+	h1 {
+		display: flex;
+		justify-content: center;
+		font-size: 1rem;
+	} 
+	h2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+	}
+
+
+
+	
